@@ -1,0 +1,58 @@
+
+
+.img-container {
+  background-image: url(hero.jpg);
+  opacity: 0.9;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -16px;
+}
+
+.inner-container {
+  font-size: 4em;
+  color: whitesmoke;
+  font-family: 'Roboto';
+  padding-left: 200px;
+  padding-top: 70px;
+}
+
+.brands {
+  align-content: center;
+  margin-left: 230px;
+}
+
+.category-image {
+  height: 300px;
+  width: 320px;
+  object-fit: cover;
+  margin-top: 50px;
+  margin-bottom: 200px;
+  margin-left: 100px;
+  margin-right: 20px;
+}
+
+.brandsdiv {
+  height: 250px;
+  width: 1000px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+.myButton {
+  display: inline-block;
+  width: 200px;
+  font-weight: bold;
+  padding: 10;
+  color: white;
+  border: 4px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out, color 0.2 ease-out;
+}
+
+
