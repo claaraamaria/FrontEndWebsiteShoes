@@ -1,96 +1,76 @@
-.img-container {
-  background-image: url(hero.jpg);
-  opacity: 0.9;
-  height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: -16px;
+/*wrapping the page in 2*/
+/* sizes */
+#main-wrap > div { min-height: 450px; }
+
+#header,
+#footer {
+    min-height: 40px;
 }
 
-.inner-container {
-  font-size: 4em;
-  color: whitesmoke;
-  font-family: 'Roboto';
-  padding-left: 200px;
-  padding-top: 70px;
+/* layout */
+#main-wrap {
+    /* overflow to handle inner floating block */
+    overflow: auto;
 }
 
-.brands {
-  align-content: center;
-  margin-left: 230px;
+#sidebar {
+    float: left;
+    width: 30%;
 }
 
-.brandsdiv {
-  height: 250px;
-  width: 1000px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
+#content-wrap {
+    margin-left: 500px;
+    margin-top: 20px;
+    width: 60%;
+} 
+
+/*wrapping paragraph*/
+.pwrap{
+    word-wrap: normal;
+}
+.product-filter h1 {
+    flex-grow: 1;
 }
 
-img:hover {
-  opacity: 1.0;
+/*product layout*/
+.products {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.container_image {
-  position: relative;
-  height: 300px;
-  width: 320px;
-  margin-top: 50px;
-  margin-bottom: 200px;
-  margin-left: 25px;
-  margin-right: 25px;
-  opacity: 0.5;
+.product-card {
+    padding: 2%;
+    flex-grow: 1;
+    flex-basis: 16%;
+    display: flex; /* so child elements can use flexbox stuff too! */
+    flex-direction: column;
 }
 
-.container_image:hover{
-  opacity: 1;
+.product-image img {
+    max-width: 100%;
 }
 
-.container_image img{
-  object-fit: cover;
-  height: 300px;
-  width: 320px;
+/*form button*/
+.form-control{
+    margin-top: 20px;
+    margin-left: 130px;
+}
+.btn{
+    margin-top: 20px;
+    border: 2px solid #0b7dda;
+    color: #0b7dda;
 }
 
-.container_image img:hover{
-  opacity: 1;
-  object-fit: cover;
-  height: 300px;
-  width: 320px;
+/*Browse by categories*/
+.browse-title{
+    line-height: 2;
+    margin-left: 130px;
+}
+.browse-cat{
+    margin-left: 130px;
 }
 
-.container_image .btn {
-  position: absolute;
-  bottom: 8px;
-  left: 65px;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  opacity: 0.8;
-  color: lime;
-  border: 2px solid rosybrown;
-  background-color: transparent;
-  font-size: 16px;
-  padding: 12px 24px;
-  cursor: pointer;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.container_image .btn:hover { 
-  background-color: chocolate;
-  color: lightgray;
-  opacity: 0.5;
-}
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
+/*footer */
 body {
   font-family:Rubik,sans-serif;
   position:relative;
@@ -232,4 +212,3 @@ a {
   padding-left:0
  }
 }
-

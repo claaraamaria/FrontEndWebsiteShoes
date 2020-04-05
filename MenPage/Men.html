@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Let's shoe about it!</title>
+    <title>Men - Shoe about it!</title>
     <link rel="icon" href="logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -12,7 +12,7 @@
       integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="Men.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
@@ -26,7 +26,7 @@
           <a class="navbar-brand" href="#">DNK</a>
           <ul class="navbar-nav">
             <li class="nav-item ss">
-              <a class="nav-link" href="#" target="_blank">Home</a>
+              <a class="nav-link" href="../HomePage/home.html" target="_blank">Home</a>
             <li class="nav-item">
               <a class="nav-link" href="../MenPage/Men.html" target="_blank">Men</a>
             </li>
@@ -48,40 +48,99 @@
           </ul>
         </div>
       </nav>
-    </header>
+    </header> 
 
-    <main>
-      <!-- Hero image with shoe -->
-      <div class="img-container align-items-start">
-        <div class="inner-container">
-          <h1>Let's talk about some</h1>
-          <h1>shoes!</h1>
-          <p>A website where we can discuss the shoes' fashion</p>
-          <a class="btn btn-light" href="#" target="_blank">Shoe Now</a>
-          <a class="btn btn-outline-light" href="#" target="_blank">Find More</a>
+
+    <div >
+      <div id="main-wrap">
+        <div id="sidebar">
+          <!--search Button-->
+          <form class="form-inline ml-auto">
+            <input type="text" class="form-control mr-2" placeholder="Search">
+            <button class="btn btn-outline-success">Search</button>
+          </form>
+
+          <h2 class="browse-title">Browse by categories</h2>
+          <ul>
+            <li class="browse-cat ">
+              <a href="#">Accesories&emsp;</a>
+              <span class="count">&emsp;&nbsp;(3)</span>
+            </li>
+            <li class="browse-cat">
+              <a href="#">Men&emsp;&emsp;&emsp;</a>
+              <span class="count">&emsp;&emsp;&nbsp;&nbsp;(5)</span>
+            </li>
+            <li class="browse-cat">
+              <a href="#">Women&emsp;&emsp;</a>
+              <span class="count">&emsp;&emsp;(4)</span>
+            </li>
+          </ul>
+        </div>
+
+
+        <div id="content-wrap">
+          <h1>Men</h1>
+          <p>Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae
+            erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora
+            torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo.
+            Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque
+            elit sed ut.</p>
+          
+            <section class="products">
+              <div class="justify-content-left products">  
+                <div class="product-card">
+                  <div class="product-image">
+                    <img src="img1men.jpg">
+                  </div>
+                  <div>
+                    <h5>Brown Shoe</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-image">
+                    <img src="img2men.jpg">
+                  </div>
+                  <div>
+                    <h5>Black Shoe</h5>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation
+                       ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-image">
+                    <img src="img3men.jpg">
+                  </div>
+                  <div>
+                    <h5>Brown Long Shoe</h5>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate
+                       velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-image">
+                    <img src="img4men.jpg">
+                  </div>
+                  <div>
+                    <h5>Black Shiny Shoe</h5>
+                    <p>Excepteur sint occaecat cupidatat non proident, 
+                      sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  </div>
+                </div>
+
+              </div>
+              <!-- more products -->
+            
+            </section>
+
         </div>
       </div>
-      <!-- End of hero image -->
-
-      <img src="brands.png" class="brandsdiv" />
-
-      <div class="row justify-content-center">
-        <div class="container_image">
-          <img src="WomenShoes.jpg" alt="Women Shoes"/>
-          <button class="btn">Women</button>
-        </div>
-        <div class="container_image">
-          <img src="MenShoes.jpg" alt="Men Shoes"/>
-          <button class="btn" href="../MenPage/Men.html" target="_blank">Men</button>
-        </div>
-        <div class="container_image">
-          <img src="SuitUpShoes.jpg" alt="Suit up! Shoes"/>
-          <button class="btn">Suit Up!</button>
-        </div>
-      </div>
-    </main>
-
-
+    </div>
+    
     <footer class="footer-area footer--light">
       <div class="footer-big">
         <!-- start .container -->
@@ -210,4 +269,3 @@
       </div>
     </footer>
   </body>
-</html>
